@@ -12,8 +12,8 @@ var mongoose = require('mongoose');
 
 var test_db = process.env.NODE_ENV || 'BLOG-DEVELOPMENT'
 
-// mongoose.connect(`mongodb://localhost:27017/BLOG-TEST`, { useNewUrlParser: true });
-mongoose.connect(`mongodb://development:${process.env.passdatabase}@ds135946.mlab.com:35946/blog`, { useNewUrlParser: true } )
+mongoose.connect(`mongodb://localhost:27017/BLOG-TEST`, { useNewUrlParser: true });
+// mongoose.connect(`mongodb://development:${process.env.passdatabase}@ds135946.mlab.com:35946/blog`, { useNewUrlParser: true } )
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {

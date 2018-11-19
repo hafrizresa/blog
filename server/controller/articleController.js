@@ -36,9 +36,7 @@ class Controller {
                 _id: req.body.id
             })
             .then(data => {
-
                 res.send(data)
-
             })
             .catch(err => {
                 console.log(err)

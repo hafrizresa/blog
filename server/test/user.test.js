@@ -116,7 +116,7 @@ describe('login and register user', function () {
             .request('http://localhost:3000')
             .post('/article/user')
             .send({
-               
+               token:null
             })
             .end(function (err, res) {
                 expect(res).to.have.status(500)
