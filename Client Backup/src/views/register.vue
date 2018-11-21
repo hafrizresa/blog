@@ -4,15 +4,14 @@
 </template>
 
 <script>
-import RegisterForm from '@/components/register.vue'
+import RegisterForm from "@/components/register.vue";
 export default {
-    name: 'register',
+  name: "register",
   components: {
-      RegisterForm
+    RegisterForm
   }
-}
+};
 </script>
 
 <style>
-
 </style>
